@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QLSV</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body onload="renderListStudent()">  
+    <div class="form-student">
+        <h3>Thông Tin Nhân Viên</h3>
+        <label for="">họ và tên</label>
+        <input type="text" name="" id="fullname">
+        <span id="fullname-err" class="error"></span>
+        <br>
+        <label for="">địa chỉ email</label>
+        <input type="text" name="" id="email">
+        <span id="email-err" class="error"></span>
+        <br>
+        <label for="">số phone</label>
+        <input type="text" name="" id="phone">
+        <span id="phone-err" class="error"></span>
+        <br>
+        <label for="">địa chỉ</label>
+        <input type="text" name="" id="address">
+        <span id="address-err" class="error"></span>
+        <br>
+        <label for="">giới tính</label>
+        <input type="radio" name="gender" id="male" value="1">Nam
+        <input type="radio" name="gender" id="female" value="2">Nữ
+        <span id="gender-err" class="error"></span>
+        <br>
+
+        <label for=""></label>
+        <br>
+        <button onclick="save()">Lưu Lại</button>
+    </div>
+    <div class="list-student" id="list-student">
+        <h3>Danh sách nhân viên</h3>
+        <table id="grid-student" width="650" border="1" cellpadding="0" cellpadding="0">
+           
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
